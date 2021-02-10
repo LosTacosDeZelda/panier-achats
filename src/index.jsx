@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import Appli from './Appli';
+import './index.css';
+import './Page.css'
+import Page from './Page';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Appli />
+    <Page />
   </React.StrictMode>,
   document.getElementById('racine')
 );
