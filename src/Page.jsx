@@ -2,7 +2,7 @@ import Entete from './Entete';
 import PiedDePage from './PiedDePage';
 import ListeProduits from './ListeProduits';
 
-import "./Page.css";
+import "./Page.scss";
 
 export default function Page() {
     

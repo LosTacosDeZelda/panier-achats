@@ -1,4 +1,4 @@
-import "./PiedDePage.css";
+import "./PiedDePage.scss";
 
 export default function PiedDePage() {
     const annee = new Date().getFullYear();
