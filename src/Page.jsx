@@ -3,15 +3,17 @@ import PiedDePage from './PiedDePage';
 import ListeProduits from './ListeProduits';
 
 import "./Page.scss";
+import { useState } from 'react';
 
 export default function Page() {
+    
+    const etatPanier = useState({});
     
     return(
         
         <div className="page">
             <Entete/>
             <section>
-                Contenu principal
                 <ListeProduits/>
             </section>
             <PiedDePage/>
