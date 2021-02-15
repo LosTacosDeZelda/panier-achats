@@ -4,9 +4,11 @@ import "./Produit.scss";
 export default function Produit(props) {
     
     function ajouterArticle(params) {
+
         const [panier, setPanier] = props.etatPanier;
 
-        if (panier.props.id) {
+        if (panier[props.id]) {
+
             panier[props.id].qte++;
         }
         else{
@@ -15,7 +17,7 @@ export default function Produit(props) {
 
         //const nouveauPanier = Object.assign({},panier);
         setPanier(JSON.parse(JSON.stringify(panier)));
-        //console.log(panier);
+        console.log("Ajouttt");
     }
 
     return(
@@ -26,7 +28,7 @@ export default function Produit(props) {
             <div className="info">
                 <h3>{props.nom}</h3>
                 <p className="prix">{props.prix}</p>
-                <BtnAjoutPanier/>
+                <BtnAjoutPanier onClick={ajouterArticle}/>
             </div>
         </li>  
     );

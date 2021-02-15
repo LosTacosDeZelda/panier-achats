@@ -1,7 +1,8 @@
-import { useState } from "react";
 import "./Entete.scss";
+import { useState } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Badge  from "@material-ui/core/Badge";
+import SommairePanier from "./SommairePanier";
 
 export default function Entete(props) {
 
@@ -22,9 +23,10 @@ export default function Entete(props) {
                 </ul>
                 <ul className='nav-utilisateur'>
                     <li>
-                        <Badge badgeContent="5" color="secondary">
+                        <Badge onClick={basculerSommairePanier} badgeContent="5" color="secondary">
                             <ShoppingCartIcon/>
                         </Badge>
+                        <SommairePanier etatPanier={props.etatPanier} cacher={cacheSommaire}/>
                     </li>
                     <li>Compte</li>
                 </ul>

@@ -1,8 +1,7 @@
+import "./Page.scss";
 import Entete from './Entete';
 import PiedDePage from './PiedDePage';
 import ListeProduits from './ListeProduits';
-
-import "./Page.scss";
 import { useState } from 'react';
 
 export default function Page() {
@@ -12,9 +11,9 @@ export default function Page() {
     return(
         
         <div className="page">
-            <Entete/>
+            <Entete etatPanier={etatPanier}/>
             <section>
-                <ListeProduits/>
+                <ListeProduits etatPanier={etatPanier}/>
             </section>
             <PiedDePage/>
 
