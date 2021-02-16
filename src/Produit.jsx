@@ -15,11 +15,10 @@ export default function Produit(props) {
             panier[props.id] = {prix: props.prix, qte: 1}
         }    
 
-        //const nouveauPanier = Object.assign({},panier);
         setPanier(JSON.parse(JSON.stringify(panier)));
-        console.log("Ajouttt");
+        
     }
-
+    
     return(
         <li className="Produit">
             <div className="image">
@@ -27,7 +26,7 @@ export default function Produit(props) {
             </div>
             <div className="info">
                 <h3>{props.nom}</h3>
-                <p className="prix">{props.prix}</p>
+                <p className="prix">{props.prix + " CA$"}</p>
                 <BtnAjoutPanier onClick={ajouterArticle}/>
             </div>
         </li>  

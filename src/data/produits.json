@@ -2,21 +2,21 @@
     {
         "id": "prd0001",
         "nom": "T-Shirt Beige",
-        "prix": "64.99$"
+        "prix": "64.99"
     },
     {
         "id": "prd0002",
         "nom": "T-Shirt Saumon",
-        "prix": "35.99$"
+        "prix": "35.99"
     },
     {
         "id": "prd0003",
         "nom": "Sweater Noir",
-        "prix": "15.99$"
+        "prix": "15.99"
     },
     {
         "id": "prd0004",
         "nom": "Chandail Blanc",
-        "prix": "10.99$"
+        "prix": "10.99"
     }
 ]
