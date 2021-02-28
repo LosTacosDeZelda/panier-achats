@@ -1,14 +1,14 @@
 import "./SommairePanier.scss";
 
-export default function SommairePanier(props) {
-    console.log("paniiier",props.etatPanier);
-    const [panier, setPanier] = props.etatPanier;
+export default function SommairePanier({cacher, etatPanier}) {
+    console.log("paniiier",etatPanier);
+    const [panier] = etatPanier;
 
     const infoPanier = retournerInfoPanier(panier);
 
     return(
         
-        <div className={"SommairePanier" + (props.cacher ? " cacher" : "")}>
+        <div className={"SommairePanier" + (cacher ? " cacher" : "")}>
             <span className="nbArticles">Articles différents : {infoPanier.nbArticles}</span>
             <span className="qteArticles">Nombre total d'articles : {infoPanier.qteArticles}</span>
             <span className="sousTotal">Sous-total : {infoPanier.st}</span>
@@ -49,5 +49,5 @@ function retournerInfoPanier(pan) {
 
     return info;
 
-    console.log("Sous Tot",sousTotal);
+    
 }
